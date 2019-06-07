@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
 gem "rails", "5.0.7.2"
 
@@ -58,9 +58,9 @@ gem "recipient_interceptor", "~> 0.2.0"
 gem "wkhtmltopdf-binary", "~> 0.12.4"
 gem "wicked_pdf", "~> 1.1.0"
 
-source 'https://rails-assets.org' do
-  gem 'rails-assets-leaflet'
-  gem 'rails-assets-markdown-it', '~> 8.2.1'
+source "https://rails-assets.org" do
+  gem "rails-assets-leaflet"
+  gem "rails-assets-markdown-it", "~> 8.2.1"
 end
 
 group :development, :test do
@@ -87,17 +87,17 @@ group :test do
 end
 
 group :development do
-  gem 'capistrano', '~> 3.10.1', require: false
-  gem 'capistrano-bundler', '~> 1.2', require: false
-  gem 'capistrano-rails', '~> 1.4.0', require: false
-  gem 'capistrano3-delayed-job', '~> 1.7.3'
-  gem 'mdl', '~> 0.5.0', require: false
-  gem 'rubocop', '~> 0.54.0', require: false
-  gem 'rubocop-rspec', '~> 1.26.0', require: false
-  gem 'rvm1-capistrano3', '~> 1.4.0', require: false
-  gem 'scss_lint', '~> 0.55.0', require: false
-  gem 'web-console', '~> 3.3.0'
-  gem 'github_changelog_generator'
+  gem "capistrano", "~> 3.10.1", require: false
+  gem "capistrano-bundler", "~> 1.2", require: false
+  gem "capistrano-rails", "~> 1.4.0", require: false
+  gem "capistrano3-delayed-job", "~> 1.7.3"
+  gem "erb_lint", require: false
+  gem "mdl", "~> 0.5.0", require: false
+  gem "rubocop", "~> 0.54.0", require: false
+  gem "rubocop-rspec", "~> 1.26.0", require: false
+  gem "rvm1-capistrano3", "~> 1.4.0", require: false
+  gem "scss_lint", "~> 0.55.0", require: false
+  gem "web-console", "~> 3.3.0"
 end
 
-eval_gemfile './Gemfile_custom'
+eval_gemfile "./Gemfile_custom"
